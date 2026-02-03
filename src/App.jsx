@@ -61,9 +61,49 @@ function App() {
           >
             <img src="/logo.jpg" alt="Pixenze Booth" className="w-full h-full object-cover" />
           </motion.div>
-          <h1 className="font-titan text-4xl text-white text-stroke-sm drop-shadow-lg tracking-wider text-center">
-            PixenzeBooth
-          </h1>
+          <motion.div
+            animate={{ y: [0, -15, 0] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+            className="relative mb-2 mt-4"
+          >
+            <motion.h1
+              animate={{ rotate: [-2, -3, -1, -2] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              className="text-5xl sm:text-6xl font-titan text-game-accent text-stroke drop-shadow-game-lg text-center leading-tight"
+            >
+              PIXENZE
+            </motion.h1>
+            <motion.h1
+              animate={{ rotate: [2, 3, 1, 2] }}
+              transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+              className="text-5xl sm:text-6xl font-titan text-game-primary text-stroke drop-shadow-game-lg -mt-2 text-center leading-tight"
+            >
+              BOOTH
+            </motion.h1>
+
+            {/* Decorative Stars */}
+            <motion.div
+              animate={{
+                rotate: [0, 360],
+                scale: [1, 1.3, 1]
+              }}
+              transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
+              className="absolute -top-4 -right-2"
+            >
+              <Icons.Star className="w-8 h-8 text-[#face10]" fill="currentColor" />
+            </motion.div>
+
+            <motion.div
+              animate={{
+                y: [0, -10, 0],
+                scale: [1, 1.5, 1]
+              }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              className="absolute bottom-2 -left-4"
+            >
+              <Icons.Star className="w-6 h-6 text-[#39FF14]" fill="currentColor" />
+            </motion.div>
+          </motion.div>
           <p className="font-nunito text-[var(--color-game-surface)] mt-2 font-bold text-lg opacity-90 text-center">
             Capture Memories, Create Fun!
           </p>
@@ -89,14 +129,12 @@ function App() {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20, delay: index * 0.1 }}
                 className={`
-                group flex items-center p-4 w-full rounded-xl
-                border-4 border-black font-titan text-xl relative overflow-hidden
-                transition-all duration-200 hover:-translate-y-1 active:translate-y-1
-                ${index % 2 === 0 ? 'bg-[var(--color-game-surface)] text-[var(--color-game-bg)]' : 'bg-[var(--color-game-secondary)] text-[var(--color-game-bg)]'}
-                shadow-[4px_4px_0px_0px_rgba(0,0,0,0.4)]
-                hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.4)]
-                active:shadow-none
+                group flex items-center p-4 w-full rounded-xl text-xl relative overflow-hidden
+                ${link.button_color
+                    ? 'border-4 border-black font-titan shadow-[4px_4px_0px_0px_rgba(0,0,0,0.4)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.4)] transition-all duration-200 hover:-translate-y-1 active:translate-y-1 active:shadow-none'
+                    : (index % 2 === 0 ? 'btn-game-accent' : 'btn-game-secondary')}
               `}
+                style={link.button_color ? { backgroundColor: link.button_color, color: link.text_color } : {}}
               >
                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
 

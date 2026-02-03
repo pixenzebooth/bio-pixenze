@@ -6,6 +6,8 @@ CREATE TABLE public.pixenze_links (
     icon TEXT, -- Lucide icon name
     "order" INTEGER DEFAULT 0,
     is_active BOOLEAN DEFAULT true,
+    button_color TEXT,
+    text_color TEXT,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );
 
