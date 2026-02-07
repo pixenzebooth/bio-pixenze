@@ -185,10 +185,10 @@ body {
     font-family: 'Nunito', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Rich Deep Blue Gradient Background */
-    background: radial-gradient(circle at 50% 0%, #1a3dbf 0%, #042493 40%, #02124d 100%);
+    /* Rich Yellow Gradient Background */
+    background: radial-gradient(circle at 50% 0%, #fcd742 0%, #face10 40%, #c7a308 100%);
     background-attachment: fixed;
-    color: #fffff6;
+    color: #042493;
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
@@ -202,15 +202,15 @@ body::before {
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle at 15% 20%, rgba(255, 255, 246, 0.4) 1px, transparent 1px),
-        radial-gradient(circle at 35% 5%, rgba(250, 206, 16, 0.3) 1.5px, transparent 1.5px),
-        radial-gradient(circle at 55% 15%, rgba(255, 255, 246, 0.5) 1px, transparent 1px),
-        radial-gradient(circle at 75% 8%, rgba(250, 206, 16, 0.4) 2px, transparent 2px),
-        radial-gradient(circle at 85% 25%, rgba(255, 255, 246, 0.3) 1px, transparent 1px),
+        radial-gradient(circle at 15% 20%, rgba(4, 36, 147, 0.4) 1px, transparent 1px),
+        radial-gradient(circle at 35% 5%, rgba(4, 36, 147, 0.3) 1.5px, transparent 1.5px),
+        radial-gradient(circle at 55% 15%, rgba(4, 36, 147, 0.5) 1px, transparent 1px),
+        radial-gradient(circle at 75% 8%, rgba(4, 36, 147, 0.4) 2px, transparent 2px),
+        radial-gradient(circle at 85% 25%, rgba(4, 36, 147, 0.3) 1px, transparent 1px),
         radial-gradient(circle at 25% 35%, rgba(186, 28, 22, 0.2) 2px, transparent 2px),
-        radial-gradient(circle at 45% 30%, rgba(255, 255, 246, 0.6) 1px, transparent 1px),
-        radial-gradient(circle at 65% 40%, rgba(250, 206, 16, 0.3) 1.5px, transparent 1.5px),
-        radial-gradient(circle at 95% 35%, rgba(255, 255, 246, 0.4) 1px, transparent 1px),
+        radial-gradient(circle at 45% 30%, rgba(4, 36, 147, 0.6) 1px, transparent 1px),
+        radial-gradient(circle at 65% 40%, rgba(4, 36, 147, 0.3) 1.5px, transparent 1.5px),
+        radial-gradient(circle at 95% 35%, rgba(4, 36, 147, 0.4) 1px, transparent 1px),
         radial-gradient(circle at 20% 45%, rgba(186, 28, 22, 0.3) 1.5px, transparent 1.5px);
     background-size: 100% 60%;
     background-repeat: no-repeat;
@@ -225,9 +225,9 @@ body::before {
 @media (max-width: 768px) {
     body::before {
         background-image:
-            radial-gradient(circle at 20% 20%, rgba(255, 255, 246, 0.5) 1.5px, transparent 1.5px),
-            radial-gradient(circle at 50% 15%, rgba(250, 206, 16, 0.4) 1.5px, transparent 1.5px),
-            radial-gradient(circle at 80% 25%, rgba(255, 255, 246, 0.4) 1.5px, transparent 1.5px);
+            radial-gradient(circle at 20% 20%, rgba(4, 36, 147, 0.5) 1.5px, transparent 1.5px),
+            radial-gradient(circle at 50% 15%, rgba(4, 36, 147, 0.4) 1.5px, transparent 1.5px),
+            radial-gradient(circle at 80% 25%, rgba(4, 36, 147, 0.4) 1.5px, transparent 1.5px);
         animation: none;
         opacity: 0.8;
     }
@@ -243,19 +243,19 @@ body::after {
     background:
         linear-gradient(to bottom,
             transparent 0%,
-            rgba(4, 36, 147, 0.2) 20%,
-            rgba(2, 18, 77, 0.6) 60%,
-            rgba(2, 12, 43, 0.9) 100%),
+            rgba(252, 215, 66, 0.1) 20%,
+            rgba(250, 206, 16, 0.3) 60%,
+            rgba(199, 163, 8, 0.5) 100%),
         repeating-linear-gradient(0deg,
             transparent,
             transparent 39px,
-            rgba(250, 206, 16, 0.08) 39px,
-            rgba(250, 206, 16, 0.15) 40px),
+            rgba(4, 36, 147, 0.08) 39px,
+            rgba(4, 36, 147, 0.15) 40px),
         repeating-linear-gradient(90deg,
             transparent,
             transparent 39px,
-            rgba(250, 206, 16, 0.08) 39px,
-            rgba(250, 206, 16, 0.15) 40px);
+            rgba(4, 36, 147, 0.08) 39px,
+            rgba(4, 36, 147, 0.15) 40px);
     background-size: 100% 100%, 60px 60px, 60px 60px;
     transform: perspective(400px) rotateX(45deg);
     transform-origin: bottom;
@@ -269,9 +269,9 @@ body::after {
         transform: none;
         height: 30%;
         background:
-            linear-gradient(to bottom, transparent, rgba(2, 12, 43, 0.95)),
-            repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(250, 206, 16, 0.05) 39px, rgba(250, 206, 16, 0.1) 40px),
-            repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(250, 206, 16, 0.05) 39px, rgba(250, 206, 16, 0.1) 40px);
+            linear-gradient(to bottom, transparent, rgba(199, 163, 8, 0.5)),
+            repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(4, 36, 147, 0.05) 39px, rgba(4, 36, 147, 0.1) 40px),
+            repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(4, 36, 147, 0.05) 39px, rgba(4, 36, 147, 0.1) 40px);
     }
 }
 

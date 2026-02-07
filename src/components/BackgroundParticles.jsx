@@ -12,7 +12,7 @@ const BackgroundParticles = () => {
             duration: Math.random() * 20 + 10,
             delay: Math.random() * 5,
             type: Math.random() > 0.5 ? 'circle' : 'square',
-            color: Math.random() > 0.5 ? 'rgba(250, 206, 16, 0.1)' : 'rgba(255, 255, 246, 0.1)'
+            color: Math.random() > 0.5 ? 'rgba(4, 36, 147, 0.2)' : 'rgba(255, 255, 246, 0.4)'
         }));
     }, []);
 

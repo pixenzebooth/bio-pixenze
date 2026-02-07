@@ -90,7 +90,7 @@ function App() {
               transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
               className="absolute -top-4 -right-2"
             >
-              <Icons.Star className="w-8 h-8 text-[#face10]" fill="currentColor" />
+              <Icons.Star className="w-8 h-8 text-[#042493]" fill="currentColor" />
             </motion.div>
 
             <motion.div
@@ -104,8 +104,8 @@ function App() {
               <Icons.Star className="w-6 h-6 text-[#39FF14]" fill="currentColor" />
             </motion.div>
           </motion.div>
-          <p className="font-nunito text-[var(--color-game-surface)] mt-2 font-bold text-lg opacity-90 text-center">
-            Capture Memories, Create Fun!
+          <p className="font-nunito text-[#042493] mt-2 font-bold text-lg opacity-90 text-center">
+            Free Online PhotoBooth!
           </p>
         </motion.div>
 
@@ -155,7 +155,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 text-white/50 font-nunito text-sm font-bold">
+        <footer className="mt-12 text-[#042493]/50 font-nunito text-sm font-bold">
           © {new Date().getFullYear()} PixenzeBooth
         </footer>
 
